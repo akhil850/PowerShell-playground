@@ -11,7 +11,7 @@ Write-host "Done" -ForegroundColor Gray
 Write-host ""
 ##
 New-NetFirewallRule -DisplayName “RDP Custom Port” -Direction Inbound –LocalPort $Custom_RDPPort -Protocol TCP -Action Allow | Out-Null
-Write-host "New RDP Port is :  " -ForegroundColor Yellow -NoNewline
+Write-host "New RDP Port is ::  " -ForegroundColor Yellow -NoNewline
 Write-host  $Custom_RDPPort -BackgroundColor Red  -NoNewline
 Write-host ""
 Write-host ""
